@@ -5,5 +5,4 @@ RUN echo '@edge http://nl.alpinelinux.org/alpine/edge/main' >> /etc/apk/reposito
 
 RUN apk update && apk upgrade \
   && apk add nodejs@edge \
-  && npm uninstall -g npm \
   && rm -rf /var/cache/apk/*
